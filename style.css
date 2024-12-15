@@ -36,6 +36,26 @@ header img {
     align-items: center;
 }
 
+.MenuNav ul li:hover {
+    animation-name: scale;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.MenuNav ul li a:hover {
+    color: rgb(199, 199, 199);
+}
+
+@keyframes scale {
+    from {
+
+    }
+
+    to {
+        scale: 1.1;
+    }
+}
+
 .MenuNav ul li {
     font-size: 20px;
     list-style: none;
