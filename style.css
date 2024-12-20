@@ -72,6 +72,16 @@ header img {
 
 #Home {
     background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home .BackgroundImg {
+    height: 350px;
+    width: 350px;
+    background-color: black;
+    border-radius: 150px;
 }
 
 #Projects {
