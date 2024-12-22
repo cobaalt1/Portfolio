@@ -78,20 +78,21 @@ header img {
 }
 
 #Home .BackgroundImg {
-    height: 650px;
-    width: 650px;
-    background-color: rgba(15, 15, 15, 0.250);
-    border-radius: 350px;
+    height: 600px;
+    width: 600px;
+    background-color: rgba(20, 20, 20, 0.25);
+    border-radius: 50%;
     overflow: hidden;
+    position: relative;
 }
 
 #Home .BackgroundImg .ProfilPicture {
-    height: 100%;
+    position: absolute;
+    transform: translate(0% ,-17%);
+}
+
+#Home .BackgroundImg .ProfilPicture img {
     width: 100%;
-    background-image: url(img/IMG_0218-1.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 #Projects {
