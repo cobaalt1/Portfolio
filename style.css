@@ -77,7 +77,31 @@ header img {
     align-items: center;
 }
 
+#Home .GridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+#Home .GridContainer .CTA {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    transform: translate(25%,150%);
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+}
+
+#Home .GridContainer .CTA2 {
+    grid-column-start: 3;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    transform: translate(13%,80%);
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+}
+
 #Home .BackgroundImg {
+    grid-column-start: 2;
     height: 600px;
     width: 600px;
     background-color: rgba(20, 20, 20, 0.25);
