@@ -78,10 +78,14 @@ header img {
 }
 
 #Home .BackgroundImg {
-    height: 450px;
-    width: 450px;
-    background-color: black;
-    border-radius: 230px;
+    height: 650px;
+    width: 650px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 350px;
+    background-image: url(img/IMG_0218-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #Projects {
