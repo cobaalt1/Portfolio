@@ -92,22 +92,23 @@ header img {
 
 #Home .GridContainer .NomPrenom {
     grid-column-start: 1;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
     font-family: "Bodoni italic",Arial, Helvetica, sans-serif;
     display: flex;
-    margin-top: 100px;
-    margin-left: 60px;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 #Home .GridContainer .CTA {
+    margin-top: 50px;
     margin-left: 200px;
     color: white;
     grid-column-start: 1;
-    font-size: 25px;
+    font-size: 30px;
     display: flex;
-    justify-content: center;
-    text-align: center;    
+    justify-content: end;
+    text-align: end;
     font-family: "Poppins",Arial, Helvetica, sans-serif;
 }
 
@@ -115,7 +116,7 @@ header img {
     width: 80%;
     grid-column-start: 3;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     justify-content: start;
     text-align: center;
@@ -133,7 +134,6 @@ header img {
 }
 
 #Home .BackgroundImg .ProfilPicture {
-    position: absolute;
     transform: translate(0% ,-17%);
 }
 
