@@ -1,6 +1,10 @@
 @font-face {
-    font-family: "Poppins";
+    font-family: "Poppins",;
     src: url(Font/Poppins-Regular.ttf);
+    font-family: "Bodoni italic";
+    src: url(Font/libre-bodoni.italic.ttf);
+    font-family: "bodoni regular";
+    src: url(Font/bodonio.regular.ttf);
 }
 
 * {
@@ -24,6 +28,7 @@ header img {
 .slide {
     min-height: 100vh;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .MenuNav {
@@ -49,7 +54,7 @@ header img {
 
 @keyframes scale {
     from {
-        
+        scale: 1;
     }
 
     to {
@@ -81,22 +86,40 @@ header img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#Home .GridContainer .NomPrenom {
+    grid-column-start: 1;
+    font-size: 30px;
+    color: white;
+    font-family: "Bodoni italic",Arial, Helvetica, sans-serif;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 60px;
 }
 
 #Home .GridContainer .CTA {
+    margin-left: 200px;
     color: white;
-    font-size: 30px;
-    position: absolute;
-    transform: translate(25%,150%);
+    grid-column-start: 1;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;    
     font-family: "Poppins",Arial, Helvetica, sans-serif;
 }
 
 #Home .GridContainer .CTA2 {
+    width: 80%;
     grid-column-start: 3;
     color: white;
-    font-size: 25px;
-    position: absolute;
-    transform: translate(13%,80%);
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    margin-top: 100px;
     font-family: "Poppins",Arial, Helvetica, sans-serif;
 }
 
@@ -104,7 +127,6 @@ header img {
     grid-column-start: 2;
     height: 600px;
     width: 600px;
-    background-color: rgba(20, 20, 20, 0.25);
     border-radius: 50%;
     overflow: hidden;
     position: relative;
