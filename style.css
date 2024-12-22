@@ -80,8 +80,14 @@ header img {
 #Home .BackgroundImg {
     height: 650px;
     width: 650px;
-    background-color: rgb(15, 15, 15);
+    background-color: rgba(15, 15, 15, 0.250);
     border-radius: 350px;
+    overflow: hidden;
+}
+
+#Home .BackgroundImg .ProfilPicture {
+    height: 100%;
+    width: 100%;
     background-image: url(img/IMG_0218-1.png);
     background-position: center;
     background-size: cover;
