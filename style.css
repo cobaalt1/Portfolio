@@ -5,12 +5,16 @@
     src: url(Font/libre-bodoni.italic.ttf);
     font-family: "bodoni regular";
     src: url(Font/bodonio.regular.ttf);
+    font-family: "sedwick";
+    src: url(Font/sedgwick-ave-display.regular.ttf);
 }
 
 * {
     margin: 0;
     padding: 0;
 }
+
+/**************** Nav ****************/
 
 header {
     height: 70px;
@@ -75,6 +79,8 @@ header img {
     font-family: "Poppins",Arial, Helvetica, sans-serif;
 }
 
+/**************** HOME ****************/
+
 #Home {
     background-color: rgb(26, 26, 26);
     display: flex;
@@ -94,20 +100,20 @@ header img {
     grid-column-start: 1;
     font-size: 40px;
     color: white;
-    font-family: "Bodoni italic",Arial, Helvetica, sans-serif;
+    font-family: "sedwick",Arial, Helvetica, sans-serif;
     display: flex;
+    justify-content: end;
     margin-left: 50px;
-    margin-top: 20px;
 }
 
 #Home .GridContainer .CTA {
-    margin-top: 50px;
-    margin-left: 200px;
+    margin-top: 230px;
+    margin-left: 50px;
+    margin-right: 50px;
     color: white;
     grid-column-start: 1;
     font-size: 30px;
     display: flex;
-    justify-content: end;
     text-align: end;
     font-family: "Poppins",Arial, Helvetica, sans-serif;
 }
@@ -133,17 +139,62 @@ header img {
     position: relative;
 }
 
+:root {
+    --background: #1a1a1a;
+    --primary: #1a1a1a;
+    --secondary: #2a2a2a;
+    --third: #1a1a1a;
+  }
+
+  .container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+  }
+  
+  .shape {
+    background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    animation: morph 10s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    width: 600px;
+  }
+  
+  @keyframes morph {
+    0% {
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(-45deg, var(--primary) 0%, var(--secondary) 100%);
+    } 
+    
+    50% {
+        border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+        background: linear-gradient(-45deg, var(--third) 0%, var(--secondary) 100%);
+    }
+    
+    100% {
+      border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+      background: linear-gradient(-45deg, var(--primary) 0%, var(--secondary) 100%);
+    } 
+  }
+
 #Home .BackgroundImg .ProfilPicture {
-    transform: translate(0% ,-17%);
+    transform: translate(0% ,-18%);
 }
 
 #Home .BackgroundImg .ProfilPicture img {
     width: 100%;
 }
 
+/**************** Projects ****************/
+
 #Projects {
     background-color: rgb(26, 26, 26);
 }
+
+/**************** About ****************/
 
 #About {
     background-color: rgb(26, 26, 26);
