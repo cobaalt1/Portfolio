@@ -25,6 +25,12 @@ header {
     position: fixed;
 }
 
+header .Logo {
+    height: 50px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
 header img {
     height: 100%;
 }
